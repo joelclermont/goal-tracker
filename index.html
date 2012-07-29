@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Goal Tracker</title>
+    <link href="css/kendo.mobile.all.min.css" rel="stylesheet" />
+</head>
+<body>
+    <section data-role="layout" data-id="default">
+        <header data-role="header">
+            <div data-role="navbar">Goal Tracker</div>
+        </header>
+
+        <footer data-role="footer">
+            <div data-role="tabstrip">
+                <a href="goals.html">Goals</a>
+            </div>
+        </footer>
+    </section>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/kendo.all.min.js"></script>
+    <script>
+        var app = new kendo.mobile.Application(document.body,
+        {
+            initial:    'goals.html',
+            transition: 'slide'
+        });
+    </script>
+</body>
+</html>
